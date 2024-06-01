@@ -1,0 +1,79 @@
+@import "../../app.scss";
+
+.about {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("/bg3.avif");
+    background-size: cover;
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 45%;
+
+        @include mobile {
+            flex-direction: column;
+            width: 90%;
+            gap: 0;
+            margin-top: 20px;
+        }
+
+        .search {
+            display: flex;
+            flex-direction: row;
+            color: black;
+            background-color: white;
+            border-radius: 50px;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0 10px 10px;
+            left: 0;
+
+            img{
+                width: 20px;
+                height: 20px;
+            }
+
+            p{
+                font-size: 20px;
+            }
+            
+        }
+
+        .details {
+            padding: 10px;
+            border-radius: 5px;
+            padding: 10px;
+            font-weight: 100px;
+            font-size: 16px;
+            color: gray;
+            
+
+            @include mobile {
+                align-items: center;
+                gap: 20px;
+                padding: 10px;
+            }
+        }
+
+    }
+
+    .crousel
+    {
+        display: flex;
+        justify-content: center;
+        @include mobile {
+            width: 0px;
+            height: 0px;
+            
+        }
+    }
+
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
