@@ -57,16 +57,19 @@ const Contact = () => {
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
-          <span>satyakamnayak2002@gmail.com</span>
+          <img src="gmail.png" width="25px" height="20px" alt =""/>
+          <span style={{fontSize:"25px",fontWeight:"bold",marginLeft:"15px"}}>Mail</span>
+          <p><a href = "mailto:satyakamnayak2002@gmail.com">satyakamnayak2002@gmail.com</a></p>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>Bhubaneswar, Odisha, India</span>
+          <img src="address.png"  width="25px" height="25px" alt =""/>
+          <span style={{fontSize:"25px",fontWeight:"bold",marginLeft:"15px"}}>Address</span>
+          <p>Bhubaneswar, Odisha, India</p>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>+91 8249327494</span>
+          <img src="phone.png"  width="25px" height="25px" alt =""/>
+          <span style={{fontSize:"25px",fontWeight:"bold",marginLeft:"15px"}}>Phone</span>
+          <p>+91 8249327494</p>
         </motion.div>
       </motion.div>
       <div className="formContainer">

@@ -28,7 +28,7 @@ const sliderVariants = {
     x: 0,
   },
   animate: {
-    x: "-220%",
+    x: "-500%",
     transition: {
       repeat: Infinity,
       repeatType:"mirror",
@@ -51,7 +51,7 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>SATYAKAM NAYAK</motion.h2>
           <motion.h1 variants={textVariants}>
-            Full Stack Web developer
+            Full Stack Web <motion.h1 style={{color: "orange"}}>Developer</motion.h1>
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button onClick={() => {window.open("https://drive.google.com/file/d/1tJD_it-zoWfWtsAGe22flmzNCQBh9Gkn/view?usp=drive_link")}}>
